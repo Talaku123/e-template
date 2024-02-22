@@ -1,0 +1,217 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  height: 100vh;
+  width: 100%;
+}
+
+/* -------------- Nav bar starts here -------------- */
+
+.auto-grid p{
+  padding-left: 2em;
+  position: absolute;
+}
+.auto-grid{
+  background-color: #f0e8f6;
+  width: 100%;
+}
+.e-first-menu-bar{
+  align-items: flex-end;
+  color: #5b05a2;
+  column-gap: 5em;
+  display: inline-flex;
+  font-size: 1.3em;
+  font-weight: 600;
+  list-style: none;
+  justify-content: flex-end;
+  width: 100%;
+  
+}
+ .e-input{
+  align-items: center;
+  column-gap: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+ 
+}
+.e-image-head{
+  font-size: x-large;
+  font-weight: 900;
+}
+header li:first-child{
+  margin-right: auto;
+}
+.e-header{
+  align-items: flex-start;
+  backdrop-filter: blur(50px);
+  color: #5b05a2;
+  display: none;
+  font-size: 2em;
+  font-weight: 900;
+  flex-direction: column;
+  height:100vh ;
+  justify-content: flex-start;
+  list-style: none;
+  position: fixed;
+  row-gap: 30px;
+  right: 0;
+  top: 0;
+  width: 300px;
+  z-index: 9;
+
+}
+
+.e-header li{
+  width: 100%;
+}
+.e-menu{
+  display: none;
+}
+.e-close-img,.e-menu-img{
+  width: 50px;
+}
+.e-close{
+  padding-top: 40px;
+}
+
+/* -----------------------Nav bar ends heare ----------- */
+
+/* -------------------body starts here ------------ */
+
+.e-second{
+  background-color: rgb(217, 210, 120);
+}
+.e-head-sec{
+  animation: slider 15s linear infinite;
+  position: relative;
+  
+}
+.wrapper{
+  display: grid;
+  font-size: 2em;
+  font-weight: 800;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  text-align: center;
+  width: 100%;
+}
+.zero{
+  background-color: pink;
+  grid-column: 5/10;
+  grid-row: 9/1;
+}
+.one{
+  background-color: red;
+  grid-column: 1/1;
+  grid-row: 1;
+}
+.two{
+  background-color: navy;
+  color: snow;
+  grid-column: 2/4;
+  grid-row: 1/4;
+}
+.three{
+  background-color: yellow;
+  color: #086208;
+  grid-column: 1;
+  grid-row: 2/9;
+}
+
+.four{
+  background-color: green;
+  color: yellow;
+  grid-column: 3/3;
+  grid-row: 4/6;
+}
+.five{
+  background-color: violet;
+  grid-column: 2;
+  grid-row: 4/9;
+}
+.six{
+  background-color: black;
+  color: snow;
+  grid-column: 3;
+  grid-row: 6/9;
+}
+
+/* -------------------- Footer Starts here -------------------- */
+
+.e-footer ul{
+  color: #5b05a2;
+  display: inline-flex;
+  font-size: x-large;
+  gap: 20px;
+  list-style: none;
+  justify-content: flex-end;
+  position: sticky;
+  width: 98%;
+ 
+}
+.e-day-night{
+  align-items: start;
+  width: 40px;
+}
+.e-footer-2 {
+  background-color: #5b05a2;
+  color: yellow;
+  height: 30dvh;
+}
+
+#js-edate{
+  opacity: .5;
+  text-align: center;
+}
+#js-edate p{
+  color: snow;
+}
+.setOnOff{
+  background-color: #222;
+  color: #e6e6e6;
+  /* font-family: fantasy;
+  text-shadow: 0px 2px 110px #ffffb9; */
+}
+
+
+/* ------------------- @media starts here ------------------ */
+
+
+  @media screen and (max-width: 650px){
+
+    .e-hide{
+      display: none;
+    }
+    .e-menu{
+      display: block;
+    }
+    .wrapper{
+       align-items: center;
+       display: block;
+       justify-content: center;
+        width: 100%;
+    }
+   
+    .zero,.one,.two,.three,.four,.five,.six{
+        margin: 3rem 0;
+        padding: 10rem;
+    }
+   
+  }
+
+  @keyframes slider {
+
+    0% {
+      left: 100%;
+    }
+    100% {
+      left: -100%;
+    }
+  }
